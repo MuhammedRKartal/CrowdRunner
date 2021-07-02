@@ -8,12 +8,16 @@ public class WinScene : MonoBehaviour
     // Start is called before the first frame update
     public GameObject exp;
     public string sname;
+    private int oldScore = 0;
 
     void OnTriggerEnter(Collider col){
         if(col.gameObject.CompareTag("Player"))
         {
-            Debug.Log(PlayerPrefs.GetInt("Score"));
-            PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")+DummyCount.dummyCount);
+            /*Debug.Log("Current:"+DummyCount.dummyCount);
+            Debug.Log("CurrentSave:"+PlayerPrefs.GetInt("Score").ToString());
+            Debug.Log("OldScore:"+oldScore);*/
+            oldScore = DummyCount.dummyCount + PlayerPrefs.GetInt("Score");
+            PlayerPrefs.SetInt("Score", oldScore);
             StartCoroutine(nextScene());
         }
     }
