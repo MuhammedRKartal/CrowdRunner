@@ -190,8 +190,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6777032704426543299, guid: e826ef50056269649b13bd44ada6a36b,
         type: 3}
+      propertyPath: canv
+      value: 
+      objectReference: {fileID: 250004385}
+    - target: {fileID: 6777032704426543299, guid: e826ef50056269649b13bd44ada6a36b,
+        type: 3}
       propertyPath: numberOfClones
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e826ef50056269649b13bd44ada6a36b, type: 3}
@@ -398,6 +403,12 @@ RectTransform:
   m_AnchoredPosition: {x: -0.2999878, y: -0.8999939}
   m_SizeDelta: {x: 0.55578613, y: 1.7513428}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &250004385 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6118702977453988539, guid: e826ef50056269649b13bd44ada6a36b,
+    type: 3}
+  m_PrefabInstance: {fileID: 79618995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &259361191
 BoxCollider:
   m_ObjectHideFlags: 0
