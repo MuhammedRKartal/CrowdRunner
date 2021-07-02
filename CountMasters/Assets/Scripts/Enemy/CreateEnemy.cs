@@ -58,7 +58,7 @@ public class CreateEnemy : MonoBehaviour
                 transform.Translate(ranDummy*Time.deltaTime);
                 transform.LookAt(ranDummy);               
             }
-
+            
         }
     }
 }

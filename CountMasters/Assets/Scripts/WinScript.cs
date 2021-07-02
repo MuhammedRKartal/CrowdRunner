@@ -11,6 +11,7 @@ public class WinScript : MonoBehaviour
     {
         Debug.Log(PlayerPrefs.GetInt("Score").ToString());
         textMesh.text = PlayerPrefs.GetInt("Score").ToString();
+        PlayerPrefs.SetInt("Score",0);
     }
 
 

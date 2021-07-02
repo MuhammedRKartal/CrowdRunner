@@ -49,6 +49,7 @@ public class Versus : MonoBehaviour
 
     IEnumerator nextScene()
     {
+        CreateEnemy.isInside = false;
         DummyCount.dummyCount =1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(0.2f);

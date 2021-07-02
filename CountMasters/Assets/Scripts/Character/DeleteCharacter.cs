@@ -53,14 +53,14 @@ public class DeleteCharacter : MonoBehaviour
     }
     IEnumerator nextScene()
     {
-        
+        yield return new WaitForSeconds(2f);
         Destroy(player);
         foreach(GameObject dummy in dummies){
             Destroy(dummy);
         }
         DummyCount.dummyCount = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        yield return new WaitForSeconds(2f);
+        
         
         
 
